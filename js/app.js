@@ -60,6 +60,37 @@ document.querySelector('li:nth-child(even)').textContent="even"; // only one is 
 
 // M U L T I P L E    E L E M E N T S     S E L E C T O R S 
 //document.getElementsByClassName();
-//const collection=document.getElementsByClassName('collection');
+const aqua=document.getElementsByClassName('item'); 
 //console.log(collection[2]);
-// document.getElementsByClassName('collection').style.background="gold";
+aqua[5].style.background="aqua";
+
+const items=document.querySelectorAll(".item");
+items[4].style.background="aqua";
+
+const odd=document.querySelectorAll('li:nth-child(odd)');
+odd.forEach(function(li){
+    li.style.background="grey";
+})
+
+const even=document.querySelectorAll('li:nth-child(even)');
+for(let i=0;i<even.length;i++){
+    even[i].style.background="#333333";
+};
+
+
+
+let lis=document.getElementsByTagName("li");
+//console.log(lis[3]);
+lis[3].style.color="aqua";
+lis[2].textContent="winner!";
+
+//convert to array
+lis=Array.from(lis);
+lis.reverse();
+console.log(lis);
+
+lis.forEach(function(li, index){
+    console.log(li.className);
+    //li.textContent='${index} :hello'; //nie działa
+});
+
