@@ -114,13 +114,36 @@
 // const listItem=document.querySelectorAll('li.item:first-child');
 // let vax=document.body.childNodes;
 // vac=list;
-
+// vac = listItem;
 // get child node
 // vac=listItem.childNodes;  
 
 // get children element nodes
+// vac=list.childNodes;
 // vac=list.children;
 // console.log(vac);
+
+
+// C R E A T I N G    E L E M E N T S
+//const li = document.createElement('li');
+//add class
+//li.className='item';
+//add id
+//li.id='new-item';
+//add atribute
+//li.setAttribute('title','new item');
+//create text node and append
+//li.appendChild(document.createTextNode('hello world!'));
+//creating link
+//const link=document.createElement('a');
+//append innerHTML
+//link.innerHTML="<a href=#> delete </a>";
+//append link to li
+//li.appendChild(link);
+//append li as a child to ul
+//document.querySelector('ul.collection').appendChild(li);
+
+//console.log(li);
 
 
 // R E P L A C I N G   E L E M E N T S       (don't work!!!!!!)
