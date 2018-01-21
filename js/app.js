@@ -124,7 +124,7 @@
 // console.log(vac);
 
 
-// C R E A T I N G    E L E M E N T S
+// **************************   C R E A T I N G    E L E M E N T S (done)   *************************************
 //const li = document.createElement('li');
 //add class
 //li.className='item';
@@ -146,10 +146,77 @@
 //console.log(li);
 
 
-// R E P L A C I N G   E L E M E N T S       (don't work!!!!!!)
-// const newElement= document.createElement("h2");
-// newElement.id="newElem";
-// newElement.appendChild(document.createTextNode("New Element"));
-// const oldElement=document.getElementById("replacing-item");
-// const parent=document.querySelector("container");
-// parent.replace(newElement, oldElement);
+// R E P L A C I N G   E L E M E N T S       (nearly done)
+//create element
+// const newHeading= document.createElement("h2");
+//add id
+// newHeading.id="newHeading";
+//new text node
+// newHeading.appendChild(document.createTextNode('Task List'));
+//get the old heading
+// const oldHeading=document.getElementById('task-title');
+//parent
+// const container=document.querySelector(".container");
+//replace
+// container.replaceChild(newHeading,oldHeading);
+
+//REMOBE ELEMENT
+// const lis=document.querySelectorAll('li');
+// const list=document.querySelectorAll('ul');
+//remove list item
+// lis[0].remove();
+//remove child
+//list.removeChild(lis[3]); (don't work!!!)
+// console.log(list);
+
+//CLASSES and ATTR
+// const firstLi=document.querySelector('li:first-child');
+// const link=firstLi.children[0];
+//classes
+// let val;
+// val=link.className;
+// val=link.classList;
+// val=link.classList[0];
+// link.classList.add('test');
+// val=link.classList;
+//attr
+// val=link.getAttribute('href');
+// val=link.setAttribute('href','http://google.com');
+// val=link.hasAttribute('href');
+// link.setAttribute('title','google');
+// link.removeAttribute('title');
+// val=link;
+
+// console.log(val);
+
+
+//***********************     E V E N T   L I S T E N E R S    ****************************
+// document.querySelector(".remove-task").addEventListener('click',
+// function(e){
+//     console.log("hello world");
+
+//     e.preventDefault();
+// });
+//named function
+
+// document.querySelector('.remove-task').addEventListener('click', onClick);
+// function onClick(e){
+//     console.log('hello world');
+//     let val;
+//     val=e;
+//     //event target element
+//     val=e.target;
+//     val=e.target.className;
+//     val=e.target.classList;
+//     //event type
+//     val=e.type;
+//     //timestamp
+//     val=e.timeStamp;
+//     //coords event relative to window
+//     val=e.clientY;
+//     val=e.clientX;
+//     //coords event relative to the element
+//     val=e.offsetY;
+//     val=e.offsetX;
+//     console.log(val);
+// };
