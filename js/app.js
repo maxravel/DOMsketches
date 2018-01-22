@@ -220,3 +220,29 @@
 //     val=e.offsetX;
 //     console.log(val);
 // };
+
+
+//*************************    M O U S E    E V E N T S   ************************** (done)
+
+// const removeBtn = document.querySelector('.remove-task');
+// const card=document.querySelector('.container');
+// const heading=document.querySelector('h2');
+
+// //add click
+// removeBtn.addEventListener('click', runEvent);
+// //add dblclick
+// removeBtn.addEventListener('dblclick', runEvent);
+// //mouseenter
+// card.addEventListener('mouseenter', runEvent);
+// //mousemove
+// card.addEventListener('mousemove', runEvent);
+// //event handler
+// function runEvent(e){
+//     console.log(`EVENT TYPE: ${e.type}`);
+
+//     heading.textContent=`Mouse x: ${e.offsetX}  Mouse y: ${e.offsetY}`;
+//     document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY}, 40)`;
+// }
+
+
+
