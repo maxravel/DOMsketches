@@ -291,16 +291,16 @@
 
 //EVENT DELEGATION
 
-document.body.addEventListener('click', deleteItem);
+// document.body.addEventListener('click', deleteItem);
 
-function deleteItem(e){
-    // console.log('delete item');
-    // console.log(e.target);
-    if(e.target.className==="delete"){
-        console.log('delete item');
-        e.target.parentElement.remove();
-    }
-    // if(e.target.parentElement.classList.contains('delete')){
-    //     console.log('delete item');   //don't work!!!!!!!!!!! problems with parent?!?!?!?!
-    // }
-}
+// function deleteItem(e){
+//     // console.log('delete item');
+//     // console.log(e.target);
+//     if(e.target.className==="delete"){
+//         console.log('delete item');
+//         e.target.parentElement.remove(); //removing item
+//     }
+//     // if(e.target.parentElement.classList.contains('delete')){
+//     //     console.log('delete item');   //don't work!!!!!!!!!!! problems with parent?!?!?!?!
+//     // }
+// }
