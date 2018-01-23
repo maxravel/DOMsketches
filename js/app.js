@@ -245,4 +245,62 @@
 // }
 
 
+//************************** K E Y B O A R D    E V E N T S (done) ***************************
+// const form=document.querySelector('form');
+// const taskInput=document.querySelector('#task');
+// const heading=document.querySelector('h2');
+// const select=document.querySelector('#select');
 
+// form.addEventListener('submit', runEvent);
+// taskInput.value='';
+
+// //taskInput.addEventListener('keydown', runEvent);
+// //taskInput.addEventListener('keyup', runEvent);
+// //taskInput.addEventListener('keypress', runEvent);
+// //taskInput.addEventListener('focus', runEvent);
+// //taskInput.addEventListener('cut', runEvent);
+// //taskInput.addEventListener('paste', runEvent);
+// select.addEventListener('change', runEvent);
+
+// function runEvent(e){
+//     console.log(`Event type: ${e.type}`);
+//     console.log(e.target.value);
+//     heading.innerHTML=e.target.value;
+
+//     //e.preventDefault();
+// }
+
+
+//****************************** E V E N T   B U B B L I N G   &   E V E N T    D E L E G A T I O N   ***************************
+//EVENT BUBBLING
+// const cardTitle=document.querySelector('#task-title');
+// const card = document.querySelector('.card');
+// const container = document.querySelector('.container');
+
+// cardTitle.addEventListener('click', function(){
+//     console.log('card title');
+// })
+
+// card.addEventListener('click', function(){
+//     console.log('card');
+// })
+
+// container.addEventListener('click', function(){
+//     console.log('container');
+// })
+
+//EVENT DELEGATION
+
+document.body.addEventListener('click', deleteItem);
+
+function deleteItem(e){
+    // console.log('delete item');
+    // console.log(e.target);
+    if(e.target.className==="delete"){
+        console.log('delete item');
+        e.target.parentElement.remove();
+    }
+    // if(e.target.parentElement.classList.contains('delete')){
+    //     console.log('delete item');   //don't work!!!!!!!!!!! problems with parent?!?!?!?!
+    // }
+}
