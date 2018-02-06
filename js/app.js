@@ -110,17 +110,48 @@
 
 // T R A V E R S I N G     D O M      (don't work!!!!!!)
 // let vac;
-// const list=document.querySelectorAll('ul.collection');
-// const listItem=document.querySelectorAll('li.item:first-child');
+// const list=document.querySelector('ul.collection');
+// const listItem=document.querySelector('li.item:first-child');
 // let vax=document.body.childNodes;
 // vac=list;
 // vac = listItem;
+
 // get child node
-// vac=listItem.childNodes;  
+// vac=list.childNodes; 
+// vac=list.childNodes[0]; 
+// vac=list.childNodes[0].nodeName;
+// vac=list.childNodes[0].nodeType;
+
+//values of node types:
+//1-element, 2-attribute, 3-text node, 8-comment, 9-document itself, 10-doctype,
 
 // get children element nodes
-// vac=list.childNodes;
 // vac=list.children;
+// vac=list.children[0];
+// list.children[0].textContent='hello';
+
+// children of children
+// list.children[3].children.id='test id';
+// vac=list.children[3].children;
+
+// last and first
+// vac=list.firstChild;
+// vac=list.firstElementChild;
+// vac=list.lastChild;
+// vac=list.lastElementChild;
+// vac=list.childElementCount;
+
+// get parent node
+// vac=listItem.parentNode;
+// vac=listItem.parentElement;
+// vac=listItem.parentElement.parentElement;
+
+// get next and prev siblings;
+// vac=listItem.nextSibling;
+// vac=listItem.nextElementSibling;
+// vac=listItem.previousSibling;
+// vac=listItem.previousElementSibling;
+
 // console.log(vac);
 
 
