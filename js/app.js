@@ -19,11 +19,12 @@
 
 // let scripts = document.scripts;
 // console.log(scripts);
+
 // scripts.forEach(function(script){    - ERROR - scripts.forEach is not a function  (forEach is for arrays only)
 //     console.log(script);
 // });
 
-// let scriptsArr = Array.from(scripts);  // making array
+// let scriptsArr = Array.from(scripts);  // making array with scripts
 // scriptsArr.forEach(function(script){
 //     console.log(script.getAttribute("src"));
 // }); //   WORKING CODE
@@ -36,27 +37,31 @@
 
 //  -  C H A N G E    S T Y L I N G
 
-// console.log(document.getElementById("parag1"));
-// document.getElementById("parag1").style.background="yellow";
-// document.getElementById("parag1").innerHTML='<span style="color:red">Lorem ipsum.</span>';
-// document.getElementById("parag1").style.display="none";
 // const parag1 = document.getElementById("parag1");
+// console.log(parag1);
+// parag1.style.background="yellow";
+// parag1.innerHTML='<span style="color:red">Lorem ipsum.</span>';
+// parag1.style.display="none";
+
 // parag1.style.padding="20px";
 // document.querySelector("#parag2").style.padding="20px";
 // console.log(document.querySelector("#parag2"));
+
 // document.querySelector("h1").style.textAlign="center";
 // document.querySelector("ul").style.padding="20px";
 // document.querySelector(".box").style.padding="20px";
+
 // const start=document.getElementById("start");
 // console.log(start.className);
 // start.style.background="white";
-// document.getElementById("start").style.display="none";
+// start.style.display="none";
 
 //  -  C H A N G E   C O N T E N T
 
 // start.textContent="Chuck Norris";
 // start.innerText="Andrzej Gołota";
 // start.innerHTML='<h2 style="color:red">Tyson Fury<h2>';
+
 // document.querySelector() - much powerful, you can use everything to select, just like jQuery $()
 // console.log(document.querySelector('#start'));
 // document.querySelector('li').style.color="red"; // only first one is red, becouse it's single selector
@@ -70,13 +75,13 @@
 
 // document.getElementsByClassName();
 
-//const items=document.getElementsByClassName("item");
+// const items=document.getElementsByClassName("item");
 // console.log(items);
 // console.log(items[0]);
 // items[4].style.color="purple";
 
 // let lis=document.getElementsByTagName("li");
-//console.log(lis[3]);
+// console.log(lis[3]);
 // lis[3].style.color="aqua";
 // lis[2].textContent="winner!";
 
@@ -108,12 +113,12 @@
 // };
 
 
-// T R A V E R S I N G     D O M      (don't work!!!!!!)
+// ***********************   T R A V E R S I N G     D O M      (done) ***************************
 // let vac;
 // const list=document.querySelector('ul.collection');
 // const listItem=document.querySelector('li.item:first-child');
 // let vax=document.body.childNodes;
-// vac=list;
+// vac = list;
 // vac = listItem;
 
 // get child node
@@ -122,13 +127,13 @@
 // vac=list.childNodes[0].nodeName;
 // vac=list.childNodes[0].nodeType;
 
-//values of node types:
-//1-element, 2-attribute, 3-text node, 8-comment, 9-document itself, 10-doctype,
+// values of node types:
+// 1-element, 2-attribute, 3-text node, 8-comment, 9-document itself, 10-doctype,
 
 // get children element nodes
 // vac=list.children;
 // vac=list.children[0];
-// list.children[0].textContent='hello';
+// list.children[4].textContent='hello';
 
 // children of children
 // list.children[3].children.id='test id';
@@ -156,23 +161,31 @@
 
 
 // **************************   C R E A T I N G    E L E M E N T S (done)   *************************************
-//const li = document.createElement('li');
-//add class
-//li.className='item';
-//add id
-//li.id='new-item';
-//add atribute
-//li.setAttribute('title','new item');
-//create text node and append
-//li.appendChild(document.createTextNode('hello world!'));
-//creating link
-//const link=document.createElement('a');
-//append innerHTML
-//link.innerHTML="<a href=#> delete </a>";
-//append link to li
-//li.appendChild(link);
-//append li as a child to ul
-//document.querySelector('ul.collection').appendChild(li);
+// const li = document.createElement('li');
+
+// add class
+// li.className='item';
+
+// add id
+// li.id='new-item';
+
+// add atribute
+// li.setAttribute('title','new item');
+
+// create text node and append
+// li.appendChild(document.createTextNode('hello world!'));
+
+// creating link
+// const link=document.createElement('a');
+
+// append innerHTML
+// link.innerHTML="<a href=#> delete </a>";
+
+// append link to li
+// li.appendChild(link);
+
+// append li as a child to ul
+// document.querySelector('ul.collection').appendChild(li);
 
 //console.log(li);
 
