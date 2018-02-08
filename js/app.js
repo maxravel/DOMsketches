@@ -190,40 +190,50 @@
 //console.log(li);
 
 
-// R E P L A C I N G   E L E M E N T S       (nearly done)
-//create element
-// const newHeading= document.createElement("h2");
-//add id
-// newHeading.id="newHeading";
-//new text node
-// newHeading.appendChild(document.createTextNode('Task List'));
-//get the old heading
-// const oldHeading=document.getElementById('task-title');
-//parent
-// const container=document.querySelector(".container");
-//replace
-// container.replaceChild(newHeading,oldHeading);
+// R E P L A C I N G   E L E M E N T S       (done)
 
-//REMOBE ELEMENT
+// create element
+// const newHeading = document.createElement("h2");
+
+// add id
+// newHeading.id="newHeading";
+
+// new text node
+// newHeading.appendChild(document.createTextNode('Task List'));
+
+// get the old heading
+// const oldHeading = document.getElementById('task-title');
+
+// parent
+// const card = document.querySelector(".card");
+
+// replace
+// card.replaceChild(newHeading,oldHeading);
+
+// REMOVE ELEMENT (don't work!!!!!!!!!!1)
 // const lis=document.querySelectorAll('li');
 // const list=document.querySelectorAll('ul');
-//remove list item
+
+// remove list item
 // lis[0].remove();
-//remove child
-//list.removeChild(lis[3]); (don't work!!!)
+
+// remove child
+// list.removeChild(lis[3]); //(don't work!!!)
 // console.log(list);
 
-//CLASSES and ATTR
+// CLASSES and ATTR
 // const firstLi=document.querySelector('li:first-child');
 // const link=firstLi.children[0];
-//classes
+
+// classes
 // let val;
 // val=link.className;
 // val=link.classList;
 // val=link.classList[0];
 // link.classList.add('test');
 // val=link.classList;
-//attr
+
+// attr
 // val=link.getAttribute('href');
 // val=link.setAttribute('href','http://google.com');
 // val=link.hasAttribute('href');
