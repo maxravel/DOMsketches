@@ -244,18 +244,18 @@
 // console.log(val);
 
 
-//***********************     E V E N T   L I S T E N E R S    ****************************
+//***********************     E V E N T   L I S T E N E R S  (done)  ****************************
 // document.querySelector(".remove-task").addEventListener('click',
 // function(e){
 //     console.log("hello world");
 
 //     e.preventDefault();
 // });
-//named function
 
+// named function
 // document.querySelector('.remove-task').addEventListener('click', onClick);
 // function onClick(e){
-//     console.log('hello world');
+//     //console.log('hello world');
 //     let val;
 //     val=e;
 //     //event target element
@@ -276,7 +276,7 @@
 // };
 
 
-//*************************    M O U S E    E V E N T S   ************************** (done)
+//*************************    M O U S E    E V E N T S  (done) ************************** 
 
 // const removeBtn = document.querySelector('.remove-task');
 // const card=document.querySelector('.container');
@@ -308,12 +308,12 @@
 // form.addEventListener('submit', runEvent);
 // taskInput.value='';
 
-// //taskInput.addEventListener('keydown', runEvent);
-// //taskInput.addEventListener('keyup', runEvent);
-// //taskInput.addEventListener('keypress', runEvent);
-// //taskInput.addEventListener('focus', runEvent);
-// //taskInput.addEventListener('cut', runEvent);
-// //taskInput.addEventListener('paste', runEvent);
+// taskInput.addEventListener('keydown', runEvent);
+// // taskInput.addEventListener('keyup', runEvent);
+// // taskInput.addEventListener('keypress', runEvent);
+// // taskInput.addEventListener('focus', runEvent);
+// // taskInput.addEventListener('cut', runEvent);
+// // taskInput.addEventListener('paste', runEvent);
 // select.addEventListener('change', runEvent);
 
 // function runEvent(e){
@@ -321,7 +321,7 @@
 //     console.log(e.target.value);
 //     heading.innerHTML=e.target.value;
 
-//     //e.preventDefault();
+//     // e.preventDefault(); //(find out why preventDefault destroy code)
 // }
 
 
