@@ -350,51 +350,56 @@
 // function deleteItem(e){
 //     // console.log('delete item');
 //     // console.log(e.target);
-//     if(e.target.className==="delete"){
-//         console.log('delete item');
-//         e.target.parentElement.remove(); //removing item
-//     }
-//     // if(e.target.parentElement.classList.contains('delete')){
-//     //     console.log('delete item');   //don't work!!!!!!!!!!! problems with parent?!?!?!?!
+//     // if(e.target.className==="delete"){
+//     //     console.log('delete item');
+//     //     e.target.parentElement.remove(); //removing item
 //     // }
+//     if(e.target.parentElement.classList.contains('item')){
+//         console.log('delete item'); 
+//         e.target.parentElement.remove();  
+//     }
 // }
 
 //********************* L O C A L   S T O R A G E  (done) *****************************8
-// //set local storage item
-// localStorage.setItem('name', 'john');
-// localStorage.setItem('age', 30);
-// //set session storage item
-// sessionStorage.setItem('name', 'beth');
-// //remove item from local storage
-// //localStorage.removeItem('name');
-// //get item
-// const name=localStorage.getItem('name');
-// const age=localStorage.getItem('age');
-// //clear localStorage
-// localStorage.clear();
-// console.log(name, age);
-// document.querySelector('form').addEventListener('submit',
-// function(e){
-//     const task=document.getElementById('task').value;
+//set local storage item
+localStorage.setItem('name', 'john');
+localStorage.setItem('age', 30);
 
-//     let tasks;
+//set session storage item
+sessionStorage.setItem('name', 'beth');
+//remove item from local storage
+localStorage.removeItem('name');
+//get item
+const name=localStorage.getItem('name');
+const age=localStorage.getItem('age');
 
-//     if(localStorage.getItem('tasks')===null){
-//         tasks=[];
-//     }
-//     else{
-//         tasks=JSON.parse(localStorage.getItem('tasks'));
-//     }
-//     tasks.push(task);
+//clear localStorage
+localStorage.clear();
+console.log(name, age);
 
-//     localStorage.setItem('tasks', JSON.stringify(tasks));
-//     alert('task saved');
-//     //console.log(task);
-//     e.preventDefault();
-// })
+//adding to lacalStorage
+document.querySelector('form').addEventListener('submit',
+function(e){
+    const task=document.getElementById('task').value;
 
-// const tasks=JSON.parse(localStorage.getItem('tasks'));
+    let tasks=[];
 
-// tasks.forEach(function(task){
-//     console.log(task);
-// });
+    if(localStorage.getItem('tasks')===null){
+        tasks=[];
+    }
+    else{
+        tasks=JSON.parse(localStorage.getItem('tasks'));
+    }
+    tasks.push(task);
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    alert('task saved');
+    //console.log(task);
+    e.preventDefault();
+})
+
+const tasks=JSON.parse(localStorage.getItem('tasks'));
+console.log(tasks);
+tasks.forEach(function(task){
+    console.log(task);
+});
