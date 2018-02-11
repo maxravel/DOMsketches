@@ -7,6 +7,7 @@ document.querySelector();
 multiple slectors:  
 document.getElementsByClassName();   
 
-revision done to line 211.
-to do: work on remove element 
-to do: check 'replacing elements' section
+revision complete;  
+every problems resolve;  
+to do: better format;  
+to do: using in projects;  

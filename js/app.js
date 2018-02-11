@@ -210,16 +210,16 @@
 // replace
 // card.replaceChild(newHeading,oldHeading);
 
-// REMOVE ELEMENT (don't work!!!!!!!!!!1)
+// // REMOVE ELEMENT 
 // const lis=document.querySelectorAll('li');
-// const list=document.querySelectorAll('ul');
+// const list=document.querySelector('ul'); //querySelector is something like array of li here
 
-// remove list item
+// // remove list item
 // lis[0].remove();
 
-// remove child
-// list.removeChild(lis[3]); //(don't work!!!)
-// console.log(list);
+// // remove child
+// list.removeChild(lis[3]); 
+// // console.log(list);
 
 // CLASSES and ATTR
 // const firstLi=document.querySelector('li:first-child');
@@ -326,7 +326,7 @@
 
 
 //****************************** E V E N T   B U B B L I N G   &   E V E N T    D E L E G A T I O N   ***************************
-//EVENT BUBBLING
+// EVENT BUBBLING
 // const cardTitle=document.querySelector('#task-title');
 // const card = document.querySelector('.card');
 // const container = document.querySelector('.container');
@@ -361,45 +361,48 @@
 // }
 
 //********************* L O C A L   S T O R A G E  (done) *****************************8
-//set local storage item
-localStorage.setItem('name', 'john');
-localStorage.setItem('age', 30);
+// //set local storage item
+// localStorage.setItem('name', 'john');
+// localStorage.setItem('age', 30);
 
-//set session storage item
-sessionStorage.setItem('name', 'beth');
-//remove item from local storage
-localStorage.removeItem('name');
-//get item
-const name=localStorage.getItem('name');
-const age=localStorage.getItem('age');
+// //set session storage item
+// sessionStorage.setItem('name', 'beth');
 
-//clear localStorage
-localStorage.clear();
-console.log(name, age);
+// //remove item from local storage
+// localStorage.removeItem('name');
 
-//adding to lacalStorage
-document.querySelector('form').addEventListener('submit',
-function(e){
-    const task=document.getElementById('task').value;
+// //get item
+// const name=localStorage.getItem('name');
+// const age=localStorage.getItem('age');
 
-    let tasks=[];
+// //clear localStorage
+// localStorage.clear();
+// console.log(name, age);
 
-    if(localStorage.getItem('tasks')===null){
-        tasks=[];
-    }
-    else{
-        tasks=JSON.parse(localStorage.getItem('tasks'));
-    }
-    tasks.push(task);
+// //adding to lacalStorage
+// document.querySelector('form').addEventListener('submit',
+// function(e){
+//     const task=document.getElementById('task').value;
 
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-    alert('task saved');
-    //console.log(task);
-    e.preventDefault();
-})
+//     let tasks=[];
 
-const tasks=JSON.parse(localStorage.getItem('tasks'));
-console.log(tasks);
-tasks.forEach(function(task){
-    console.log(task);
-});
+//     if(localStorage.getItem('tasks')===null){
+//         tasks=[];
+//     }
+//     else{
+//         tasks=JSON.parse(localStorage.getItem('tasks'));
+//     }
+//     tasks.push(task);
+
+//     localStorage.setItem('tasks', JSON.stringify(tasks));
+//     // alert('task saved');
+//     console.log(task);
+//     e.preventDefault();
+// })
+
+// //console log all tasks, parsing is need because forEach works on arrays
+// const tasks=JSON.parse(localStorage.getItem('tasks'));
+// console.log(tasks);
+// tasks.forEach(function(task){
+//     console.log(task);
+// });
