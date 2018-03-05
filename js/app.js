@@ -29,6 +29,14 @@
 //     console.log(script.getAttribute("src"));
 // }); //   WORKING CODE
 
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+console.log(typeof(lis));
+let lisArr = Array.from(lis);
+lisArr.forEach(function(li){
+        console.log(li.getAttribute('class'));
+        li.style.backgroundColor="green";
+});
 
 
 // ***************** D O M   S E L E C T O R S *********************
