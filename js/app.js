@@ -29,14 +29,19 @@
 //     console.log(script.getAttribute("src"));
 // }); //   WORKING CODE
 
-let lis = document.getElementsByTagName('li');
-console.log(lis);
-console.log(typeof(lis));
-let lisArr = Array.from(lis);
-lisArr.forEach(function(li){
-        console.log(li.getAttribute('class'));
-        li.style.backgroundColor="green";
-});
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(typeof(lis));
+// let lisArr = Array.from(lis);
+// lisArr.forEach(function(li){
+//         console.log(li.getAttribute('class'));
+//         li.style.backgroundColor="green";
+// });
+
+// let list = document.querySelectorAll('li');
+// console.log(list);
+// list.forEach(d => d.style.background= "red");
+
 
 
 // ***************** D O M   S E L E C T O R S *********************
@@ -121,6 +126,7 @@ lisArr.forEach(function(li){
 // };
 
 
+
 // ***********************   T R A V E R S I N G     D O M      (done) ***************************
 // let vac;
 // const list=document.querySelector('ul.collection');
@@ -168,6 +174,7 @@ lisArr.forEach(function(li){
 // console.log(vac);
 
 
+
 // **************************   C R E A T I N G    E L E M E N T S (done)   *************************************
 // const li = document.createElement('li');
 
@@ -196,6 +203,7 @@ lisArr.forEach(function(li){
 // document.querySelector('ul.collection').appendChild(li);
 
 //console.log(li);
+
 
 
 // R E P L A C I N G   E L E M E N T S       (done)
@@ -229,6 +237,8 @@ lisArr.forEach(function(li){
 // list.removeChild(lis[3]); 
 // // console.log(list);
 
+
+
 // CLASSES and ATTR
 // const firstLi=document.querySelector('li:first-child');
 // const link=firstLi.children[0];
@@ -250,6 +260,7 @@ lisArr.forEach(function(li){
 // val=link;
 
 // console.log(val);
+
 
 
 //***********************     E V E N T   L I S T E N E R S  (done)  ****************************
@@ -284,6 +295,7 @@ lisArr.forEach(function(li){
 // };
 
 
+
 //*************************    M O U S E    E V E N T S  (done) ************************** 
 
 // const removeBtn = document.querySelector('.remove-task');
@@ -305,6 +317,7 @@ lisArr.forEach(function(li){
 //     heading.textContent=`Mouse x: ${e.offsetX}  Mouse y: ${e.offsetY}`;
 //     document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY}, 40)`;
 // }
+
 
 
 //************************** K E Y B O A R D    E V E N T S (done) ***************************
@@ -331,6 +344,7 @@ lisArr.forEach(function(li){
 
 //     // e.preventDefault(); //(find out why preventDefault destroy code)
 // }
+
 
 
 //****************************** E V E N T   B U B B L I N G   &   E V E N T    D E L E G A T I O N   ***************************
@@ -367,6 +381,8 @@ lisArr.forEach(function(li){
 //         e.target.parentElement.remove();  
 //     }
 // }
+
+
 
 //********************* L O C A L   S T O R A G E  (done) *****************************8
 // //set local storage item
